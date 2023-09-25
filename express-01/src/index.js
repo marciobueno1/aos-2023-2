@@ -27,7 +27,17 @@ app.use("/users", routes.user);
 app.use("/messages", routes.message);
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  const html =`
+  <html>
+  <head> 
+  <title> Deploy do Servidor Express </title>
+  <body>
+  <h1> Aplicações Orientadas a Serviço (UNICAP - 2023.2)  </h1>
+  </body>
+  </head>
+  </html>
+  `;
+  res.send(html);
 });
 
 const port = process.env.PORT || 3000;
