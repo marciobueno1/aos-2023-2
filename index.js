@@ -2,8 +2,8 @@ import "dotenv/config";
 import cors from "cors";
 import express from "express";
 
-import models, { sequelize } from "./models";
-import routes from "./routes";
+import models, { sequelize } from "./src/models/index.js";
+import routes from "./src/routes/index.js";
 
 console.log("Hello ever running Node.js project.");
 console.log("process.env.MY_SECRET", process.env.MY_SECRET);
